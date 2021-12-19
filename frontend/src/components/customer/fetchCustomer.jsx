@@ -13,7 +13,6 @@ class Data extends FormFunc {
         this.setState({customerDetails:data})
     }
 
-
 }
  
 export default Data;

@@ -25,7 +25,6 @@ class Customers extends FetchCust {
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
-
               </tr>
             </thead>
             <tbody>
@@ -40,7 +39,6 @@ class Customers extends FetchCust {
                 <td ><Link  to={{pathname:"/customerView/"+c.Id,state:{Id:c.Id}}} className="btn btn-sm btn-light" >View</Link></td>
                 <td ><Link  to={{pathname:"/customerUpdate/"+c.Id,state:{Id:c.Id}}} className="btn btn-sm btn-light" >Update</Link></td>
                 <td ><Link  to={{pathname:"/customerDelete/"+c.Id,state:{Id:c.Id}}} className="btn btn-sm btn-danger" >Delete</Link></td>
-                  
               </tr>
                 )
               })}

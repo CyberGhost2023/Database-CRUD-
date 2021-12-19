@@ -28,8 +28,7 @@ class FormFunctions extends Component {
         let schema = {[name]:this.Schema[name]}
         const {error} = Joi.validate(obj,schema)
         if(!error) return null
-        return error.details[0].message
-    
+        return error.details[0].message    
     }
     handleSubmit = (e) => {
         e.preventDefault()
@@ -52,5 +51,4 @@ class FormFunctions extends Component {
     }
     
 }
- 
 export default FormFunctions;
